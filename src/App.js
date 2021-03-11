@@ -1,16 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/secondLesson/header';
+import Layout from './components/secondLesson/layout';
+import Footer from './components/secondLesson/footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello React.js!
-        </p>
-      </header>
-    </div>
+const App = () => {
+  const layoutTitle = "Hello React!";
+  const layoutDesc = "Learning React is cool!";
+  return(
+    <>  
+        <Header />
+        <Layout title = {layoutTitle}/>
+        <Layout desc = {layoutDesc}/>
+        <Layout 
+          title = {layoutTitle}
+          desc = {layoutDesc}
+        />
+        <Layout />
+        <Footer />
+    </>
   );
 }
 
