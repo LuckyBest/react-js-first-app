@@ -9,7 +9,7 @@ const App = () => {
   const headerDescr = 'React.js!';  
   const layoutTitle = "Hello React!";
   const layoutDesc = "Learning React is cool!";
-  const bgcForSecondLayout ='red';
+  const bgcForSecondLayout ='#ff0000';
   return(
     <>  
         <Header 
