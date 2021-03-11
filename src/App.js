@@ -8,13 +8,22 @@ const App = () => {
   return(
     <>  
         <Header />
-        <Layout title = {layoutTitle}/>
-        <Layout desc = {layoutDesc}/>
+        <Layout 
+        title = {layoutTitle}
+        desc = {layoutDesc}
+        />
+        <Layout 
+        title = {layoutTitle}
+        desc = {layoutDesc}
+        />
         <Layout 
           title = {layoutTitle}
           desc = {layoutDesc}
         />
-        <Layout />
+        <Layout
+         title = {layoutTitle}
+         desc = {layoutDesc}
+         />
         <Footer />
     </>
   );
