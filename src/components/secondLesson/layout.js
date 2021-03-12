@@ -2,7 +2,7 @@ import l from './layout.module.css'
 
 const Layout = ({title, desc, urlBg, colorBg}) =>{
     console.log('######bgc', colorBg);
-    const lBackground = urlBg ? {backgroundImage : `url(${urlBg})`} : {backgroundColor : `${colorBg}`};
+    const lBackground = urlBg ? {backgroundImage : `url(${urlBg})`} : {backgroundColor : colorBg};
     return(
     <>
         <section class={l.root} style = {lBackground}>
