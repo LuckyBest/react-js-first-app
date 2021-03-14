@@ -1,7 +1,8 @@
 import l from './layout.module.css'
 
-const Layout = ({title, desc, urlBg, colorBg}) =>{
+const Layout = ({title, urlBg, colorBg, children}) =>{
     console.log('######bgc', colorBg);
+    console.log('######props', children)
     const lBackground = urlBg ? {backgroundImage : `url(${urlBg})`} : {backgroundColor : colorBg};
     return(
     <>
@@ -13,7 +14,7 @@ const Layout = ({title, desc, urlBg, colorBg}) =>{
                         <span class={l.separator}></span>
                     </div>
                     <div class={l.desc, l.full}>
-                        <p>{desc}</p>
+                        <p>{children}</p>
                     </div>
                 </article>
             </div>

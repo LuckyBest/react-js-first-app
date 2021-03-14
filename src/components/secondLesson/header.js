@@ -1,6 +1,7 @@
 import h from './header.module.css';
 
 const Header = ({descr, title}) => {
+    
     return(
     <>
         <header class={h.root}>
